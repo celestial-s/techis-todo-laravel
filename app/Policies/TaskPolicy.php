@@ -3,7 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\task;
+use App\Models\Task;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 
