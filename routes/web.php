@@ -24,4 +24,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, "index"]);
 
 Route::get('/tasks', [App\Http\Controllers\TaskController::class, 'index'])->name('tasks');
 Route::post('/task', [App\Http\Controllers\TaskController::class, 'store'])->name('task');
-Route::delete('/task/{task}', [App\Http\Controllers\TaskController::class, 'destroy'])->name('/task/{task}');
+Route::get('/task/{task}', [App\Http\Controllers\TaskController::class, 'destroy'])->name('/task/{task}');
